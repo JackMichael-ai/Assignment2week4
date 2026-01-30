@@ -95,6 +95,29 @@ h6 {
   color: var(--heading-color);
   font-family: var(--heading-font);
 }
+/* Progress Bar Styling */
+.progress-bar-wrap {
+  background: rgba(255, 255, 255, 0.1);
+  height: 10px;
+  width: 100%;
+  border-radius: 50px;
+  margin-top: 8px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  background: var(--accent-color);
+  height: 100%;
+  border-radius: 50px;
+  transition: width 1.5s ease-in-out; /* Animation for when section enters view */
+}
+
+.progress-label span {
+  font-family: var(--heading-font);
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--heading-color);
+}
 
 /* PHP Email Form Messages
 ------------------------------*/
