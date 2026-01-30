@@ -53,23 +53,26 @@
           <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
+         <li class="dropdown">
+  <a href="#"><span>Tech Stack</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+  <ul>
+    <li><a href="#">Frontend (React/Next.js)</a></li>
+    <li class="dropdown">
+      <a href="#"><span>Backend Engineering</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+      <ul>
+        <li><a href="#">Node.js / Express</a></li>
+        <li><a href="#">Go / Microservices</a></li>
+        <li><a href="#">PostgreSQL Optimization</a></li>
+        <li><a href="#">Redis Caching</a></li>
+        <li><a href="#">API Gateway Security</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Cloud & DevOps</a></li>
+    <li><a href="#">AI Integration</a></li>
+    <li><a href="#">Mobile (React Native)</a></li>
+  </ul>
+</li>
+
           <li><a href="#contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -232,220 +235,238 @@
       </div>
 
     </section><!-- /About Section -->
+<!-- Resume Section -->
+<section id="resume" class="resume section">
 
-    <!-- Resume Section -->
-    <section id="resume" class="resume section">
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Resume</h2>
+    <p>Comprehensive career overview focusing on technical leadership, scalable architecture, and the delivery of high-impact software solutions.</p>
+  </div>
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Resume</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+  <div class="container">
+    <div class="row">
 
-      <div class="container">
+      <!-- Column 1: Summary & Education -->
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <h3 class="resume-title">Summary</h3>
+        <div class="resume-item pb-0">
+          <h4>Jack Aloo</h4>
+          <p>
+            <em>
+              Highly analytical and detail-oriented <strong>Full Stack Developer</strong> with over 4 years of professional experience.
+              Proven expertise in building complex frontend architectures and robust backend microservices. Skilled in orchestrating
+              the entire software development lifecycle, from initial system design to cloud deployment and continuous maintenance.
+            </em>
+          </p>
+          <ul>
+            <li>Nairobi, Kenya (Remote Friendly)</li>
+            <li>(254) 700-000-000</li>
+            <li>developer.pro@email.com</li>
+          </ul>
+        </div>
 
-        <div class="row">
+        <h3 class="resume-title">Education</h3>
+        <div class="resume-item">
+          <h4>M.Sc. in Software Engineering</h4>
+          <h5>2020 - 2022</h5>
+          <p><em>Technical University of Kenya</em></p>
+          <p>
+            Specialized in <strong>Distributed Systems and Cloud Computing</strong>. Conducted extensive research on optimizing
+            latency in serverless architectures. Graduated with First Class Honors and served as a lead mentor for the university's
+            Google Developer Student Club (GDSC).
+          </p>
+        </div>
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Sumary</h3>
+        <div class="resume-item">
+          <h4>B.Sc. in Computer Science</h4>
+          <h5>2015 - 2019</h5>
+          <p><em>Technical University of Kenya</em></p>
+          <p>
+            Foundational training in <strong>Data Structures, Algorithms, and Operating Systems</strong>. Completed a capstone project
+            focused on blockchain-based identity verification systems. Actively participated in regional hackathons and competitive
+            programming circuits.
+          </p>
+        </div>
+      </div>
 
-            <div class="resume-item pb-0">
-              <h4>Brandon Johnson</h4>
-              <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</em></p>
-              <ul>
-                <li>Portland par 127,Orlando, FL</li>
-                <li>(123) 456-7891</li>
-                <li>alice.barkley@example.com</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
+      <!-- Column 2: Professional Experience -->
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+        <h3 class="resume-title">Professional Experience</h3>
 
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Master of Fine Arts &amp; Graphic Design</h4>
-              <h5>2015 - 2016</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
-            </div><!-- Edn Resume Item -->
+        <div class="resume-item">
+          <h4>Senior Full Stack Engineer</h4>
+          <h5>2022 - Present</h5>
+          <p><em>Global Tech Solutions, Nairobi</em></p>
+          <ul>
+            <li>Lead the technical migration of a monolithic PHP application to a <strong>microservices architecture</strong> using Node.js and Go, resulting in a 55% improvement in system scalability.</li>
+            <li>Directly managed a team of 5 developers, conducting daily stand-ups and implementing a rigorous **CI/CD pipeline** via GitHub Actions to reduce deployment errors by 30%.</li>
+            <li>Architected a real-time analytics dashboard using **React and WebSocket API**, supporting over 50,000 concurrent active users with sub-100ms latency.</li>
+            <li>Optimized PostgreSQL database queries and implemented **Redis caching layers**, cutting server response times by nearly half for high-traffic endpoints.</li>
+          </ul>
+        </div>
 
-            <div class="resume-item">
-              <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
-              <h5>2010 - 2014</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
-            </div><!-- Edn Resume Item -->
+        <div class="resume-item">
+          <h4>Software Developer</h4>
+          <h5>2019 - 2026</h5>
+          <p><em>Innovate Digital Agency, Remote</em></p>
+          <ul>
+            <li>Developed and maintained 20+ responsive web applications for international clients using **Next.js, TypeScript, and Tailwind CSS**.</li>
+            <li>Integrated complex third-party services including **Stripe, Twilio, and AWS S3**, ensuring 99.9% uptime across all integrated features.</li>
+            <li>Collaborated closely with UI/UX designers to translate Figma prototypes into pixel-perfect, **accessible (WCAG 2.1 compliant)** components.</li>
+            <li>Pioneered the adoption of **unit and integration testing** (Jest/Cypress) within the agency, increasing code coverage from 10% to 85% across major projects.</li>
+          </ul>
+        </div>
+      </div>
 
+    </div>
+  </div>
+</section>
+
+
+<!-- Services Section -->
+<section id="services" class="services section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Technical Services</h2>
+    <p>Delivering high-performance digital infrastructure through modern engineering practices and scalable architecture.</p>
+  </div>
+
+  <div class="container">
+    <div class="row gy-4">
+
+      <!-- Web Application Engineering -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-item card-item position-relative">
+          <div class="icon">
+            <i class="bi bi-code-slash"></i>
           </div>
+          <a href="#contact" class="stretched-link">
+            <h3>Full-Stack Engineering</h3>
+          </a>
+          <p>End-to-end development of dynamic web applications using the <strong>MERN and T3 stacks</strong>. I focus on creating highly responsive, type-safe frontend interfaces coupled with robust, scalable server-side logic that ensures seamless user interaction across all device types and network conditions.</p>
+        </div>
+      </div>
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>Senior graphic design specialist</h4>
-              <h5>2019 - Present</h5>
-              <p><em>Experion, New York, NY </em></p>
-              <ul>
-                <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
-                <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
-                <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
-                <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-
-            <div class="resume-item">
-              <h4>Graphic design specialist</h4>
-              <h5>2017 - 2018</h5>
-              <p><em>Stepping Stone Advertising, New York, NY</em></p>
-              <ul>
-                <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
-                <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-                <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-
+      <!-- Backend & API Architecture -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-item card-item position-relative">
+          <div class="icon">
+            <i class="bi bi-cpu"></i>
           </div>
-
+          <a href="#contact" class="stretched-link">
+            <h3>API & Microservices</h3>
+          </a>
+          <p>Architecting secure, <strong>RESTful and GraphQL APIs</strong> designed for high availability. My approach emphasizes modular microservices architecture, utilizing Node.js and Go to handle complex data orchestration, ensuring your backend is capable of scaling horizontally as your user base grows.</p>
         </div>
-
       </div>
 
-    </section><!-- /Resume Section -->
-
-    <!-- Services Section -->
-    <section id="services" class="services section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item  position-relative">
-              <div class="icon">
-                <i class="bi bi-activity"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Nesciunt Mete</h3>
-              </a>
-              <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-broadcast"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Eosle Commodi</h3>
-              </a>
-              <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-easel"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Ledo Markt</h3>
-              </a>
-              <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-bounding-box-circles"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Asperiores Commodit</h3>
-              </a>
-              <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
-              <a href="#" class="stretched-link"></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-calendar4-week"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Velit Doloremque</h3>
-              </a>
-              <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
-              <a href="#" class="stretched-link"></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-chat-square-text"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Dolori Architecto</h3>
-              </a>
-              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
-              <a href="#" class="stretched-link"></a>
-            </div>
-          </div><!-- End Service Item -->
-
+      <!-- Database Optimization -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="service-item card-item position-relative">
+          <div class="icon">
+            <i class="bi bi-database-check"></i>
+          </div>
+          <a href="#contact" class="stretched-link">
+            <h3>Database Management</h3>
+          </a>
+          <p>Expert design and optimization of <strong>Relational (PostgreSQL) and NoSQL (MongoDB, Redis)</strong> databases. I implement advanced indexing, query optimization, and data normalization strategies to minimize latency and ensure maximum data integrity for mission-critical enterprise applications.</p>
         </div>
-
       </div>
 
-    </section><!-- /Services Section -->
-
-    <!-- Stats Section -->
-    <section id="stats" class="stats section accent-background">
-
-      <img src="assets/img/stats-bg.jpg" alt="" data-aos="fade-in">
-
-      <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="0" class="purecounter">232</span>
-              <p>Clients</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="0" class="purecounter">521</span>
-              <p>Projects</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="0" class="purecounter">1453</span>
-              <p>Hours Of Support</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="0" class="purecounter">32</span>
-              <p>Awards</p>
-            </div>
-          </div><!-- End Stats Item -->
-
+      <!-- Cloud & DevOps -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="service-item card-item position-relative">
+          <div class="icon">
+            <i class="bi bi-cloud-arrow-up"></i>
+          </div>
+          <a href="#contact" class="stretched-link">
+            <h3>Cloud & DevOps</h3>
+          </a>
+          <p>Streamlining development workflows through automated <strong>CI/CD pipelines</strong> and containerization with <strong>Docker and Kubernetes</strong>. I specialize in deploying applications on AWS and Vercel, implementing infrastructure-as-code to ensure consistent, repeatable, and secure environment provisioning.</p>
         </div>
-
       </div>
 
-    </section><!-- /Stats Section -->
+      <!-- UI/UX Systems -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+        <div class="service-item card-item position-relative">
+          <div class="icon">
+            <i class="bi bi-window-sidebar"></i>
+          </div>
+          <a href="#contact" class="stretched-link">
+            <h3>UI/UX Implementation</h3>
+          </a>
+          <p>Bridging the gap between design and code by translating complex <strong>Figma prototypes</strong> into pixel-perfect, accessible React components. I prioritize <strong>Core Web Vitals</strong> and mobile-first design principles to ensure your product is inclusive, fast, and provides a delightful user experience.</p>
+        </div>
+      </div>
+
+      <!-- AI & LLM Integration -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+        <div class="service-item card-item position-relative">
+          <div class="icon">
+            <i class="bi bi-robot"></i>
+          </div>
+          <a href="#contact" class="stretched-link">
+            <h3>AI Integration</h3>
+          </a>
+          <p>Future-proofing applications by integrating <strong>Large Language Models (LLMs)</strong> and AI-driven features. From developing intelligent chatbots to implementing RAG (Retrieval-Augmented Generation) workflows, I help businesses leverage cutting-edge AI to automate tasks and enhance data analysis.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section><!-- /Services Section -->
+
+
+   <!-- Stats Section -->
+<section id="stats" class="stats section accent-background">
+
+  <img src="assets/img/stats-bg.jpg" alt="" data-aos="fade-in">
+
+  <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row gy-4">
+
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item text-center w-100 h-100">
+          <span data-purecounter-start="0" data-purecounter-end="45" data-purecounter-duration="1" class="purecounter">0</span>
+          <p>Projects Completed</p>
+          <small class="d-block opacity-75">From MVPs to Enterprise Apps</small>
+        </div>
+      </div><!-- End Stats Item -->
+
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item text-center w-100 h-100">
+          <span data-purecounter-start="0" data-purecounter-end="1200" data-purecounter-duration="1" class="purecounter">0</span>
+          <p>GitHub Contributions</p>
+          <small class="d-block opacity-75">Commits in the last 12 months</small>
+        </div>
+      </div><!-- End Stats Item -->
+
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item text-center w-100 h-100">
+          <span data-purecounter-start="0" data-purecounter-end="99" data-purecounter-duration="1" class="purecounter">0</span>
+          <p>Uptime % Achieved</p>
+          <small class="d-block opacity-75">SLA-focused Cloud Deployments</small>
+        </div>
+      </div><!-- End Stats Item -->
+
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item text-center w-100 h-100">
+          <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter">0</span>
+          <p>Tech Stack Proficiencies</p>
+          <small class="d-block opacity-75">Languages & Modern Frameworks</small>
+        </div>
+      </div><!-- End Stats Item -->
+
+    </div>
+
+  </div>
+
+</section><!-- /Stats Section -->
+
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section">
@@ -598,8 +619,88 @@
 
     </section><!-- /Portfolio Section -->
 
-    <!-- Pricing Section -->
-    <section id="pricing" class="pricing section">
+ <!-- Pricing Section -->
+<section id="pricing" class="pricing section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Project Engagement Tiers</h2>
+    <p>Flexible pricing structures designed for everything from initial technical discovery to full-scale enterprise application deployment.</p>
+  </div>
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row gy-4 gx-lg-5">
+
+      <!-- Technical Consulting / Hourly -->
+      <div class="col-lg-6">
+        <div class="pricing-item card-item d-flex flex-column h-100">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h3>Technical Consulting & Audits</h3>
+            <h4 class="accent-color">$85.00 / hr</h4>
+          </div>
+          <p>Ideal for businesses requiring expert oversight on existing architectures. This tier includes comprehensive **Code Quality Audits**, identification of technical debt, and strategic roadmap planning. I provide deep-dive analysis into your **Security Protocols**, database normalization, and frontend performance bottlenecks to ensure your system is optimized for future scale.</p>
+          <ul class="mt-auto list-unstyled">
+            <li><i class="bi bi-check2-circle text-success me-2"></i> Architecture Review & Recommendations</li>
+            <li><i class="bi bi-check2-circle text-success me-2"></i> Performance Benchmarking (Lighthouse/Vitals)</li>
+            <li><i class="bi bi-check2-circle text-success me-2"></i> Detailed Security Vulnerability Report</li>
+          </ul>
+        </div>
+      </div><!-- End Pricing Item -->
+
+      <!-- MVP Development -->
+      <div class="col-lg-6">
+        <div class="pricing-item card-item d-flex flex-column h-100">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h3>Custom MVP Development</h3>
+            <h4 class="accent-color">From $4,500</h4>
+          </div>
+          <p>A complete "Zero-to-One" service for startups. I handle the end-to-end engineering of a **Minimum Viable Product**, including UI/UX wireframing, backend schema design, and deployment. We focus on a **Type-Safe T3 Stack (Next.js, Prisma, Tailwind)** to ensure your core feature set is delivered with production-ready stability, allowing you to validate your market fit rapidly.</p>
+          <ul class="mt-auto list-unstyled">
+            <li><i class="bi bi-check2-circle text-success me-2"></i> Full-Stack Development (4-6 week sprint)</li>
+            <li><i class="bi bi-check2-circle text-success me-2"></i> Authentication & Payment Gateway Integration</li>
+            <li><i class="bi bi-check2-circle text-success me-2"></i> 1 Month Post-Launch Critical Bug Support</li>
+          </ul>
+        </div>
+      </div><!-- End Pricing Item -->
+
+      <!-- Enterprise Features -->
+      <div class="col-lg-6">
+        <div class="pricing-item card-item d-flex flex-column h-100">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h3>Enterprise Feature Expansion</h3>
+            <h4 class="accent-color">Custom Quote</h4>
+          </div>
+          <p>Tailored for established platforms needing high-complexity features like **Real-time Collaboration Engines**, data visualization suites, or AI-integrated workflows. I specialize in integrating **Large Language Models (LLMs)** and vector databases into existing infrastructures without disrupting current user workflows, ensuring high-availability and horizontal scalability.</p>
+          <ul class="mt-auto list-unstyled">
+            <li><i class="bi bi-check2-circle text-success me-2"></i> Microservices Orchestration (Docker/K8s)</li>
+            <li><i class="bi bi-check2-circle text-success me-2"></i> Custom RAG / AI Agent Implementation</li>
+            <li><i class="bi bi-check2-circle text-success me-2"></i> End-to-End Testing (Cypress/Playwright)</li>
+          </ul>
+        </div>
+      </div><!-- End Pricing Item -->
+
+      <!-- Monthly Maintenance -->
+      <div class="col-lg-6">
+        <div class="pricing-item card-item d-flex flex-column h-100">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h3>Retainer & Site Maintenance</h3>
+            <h4 class="accent-color">$250.00 / mo</h4>
+          </div>
+          <p>A long-term partnership model ensuring your application remains secure and cutting-edge. This monthly service covers **Critical Dependency Updates**, cloud cost optimization, and regular security patching. By maintaining a continuous integration loop, I ensure that your platform evolves with modern web standards while preventing the accumulation of technical debt.</p>
+          <ul class="mt-auto list-unstyled">
+            <li><i class="bi bi-check2-circle text-success me-2"></i> 24/7 Uptime Monitoring & Error Tracking</li>
+            <li><i class="bi bi-check2-circle text-success me-2"></i> Monthly Performance & Analytics Report</li>
+            <li><i class="bi bi-check2-circle text-success me-2"></i> Priority Bug Fixing (8hr Response Time)</li>
+          </ul>
+        </div>
+      </div><!-- End Pricing Item -->
+
+    </div>
+  </div>
+
+</section><!-- /Pricing Section -->
+
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -659,186 +760,152 @@
 
     </section><!-- /Pricing Section -->
 
-    <!-- Faq Section -->
-    <section id="faq" class="faq section">
+   <!-- Faq Section -->
+<section id="faq" class="faq section">
 
-      <div class="container">
+  <div class="container">
 
-        <div class="row gy-4">
+    <div class="row gy-4">
 
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="content px-xl-5">
-              <h3><span>Frequently Asked </span><strong>Questions</strong></h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-              </p>
+      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="content px-xl-5">
+          <h3><span>Project & Technical </span><strong>Consultation</strong></h3>
+          <p>
+            Detailed insights into my software engineering philosophy, development workflows, and how I ensure the long-term success of every digital product I architect.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+
+        <div class="faq-container">
+          <div class="faq-item faq-active">
+            <h3><span class="num">1.</span> <span>How do you approach modern system architecture and scalability?</span></h3>
+            <div class="faq-content">
+              <p>My approach is rooted in <strong>Modular Architecture</strong> and the principle of separation of concerns. I design systems that can scale horizontally by utilizing microservices or serverless functions when appropriate. By implementing robust caching layers with <strong>Redis</strong> and optimizing database indexing in <strong>PostgreSQL</strong>, I ensure that applications remain performant even under heavy concurrent loads. I prioritize high-availability and zero-downtime deployments using modern containerization tools like <strong>Docker</strong>.</p>
             </div>
-          </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item-->
 
-          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="faq-container">
-              <div class="faq-item faq-active">
-                <h3><span class="num">1.</span> <span>Non consectetur a erat nam at lectus urna duis?</span></h3>
-                <div class="faq-content">
-                  <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3><span class="num">2.</span> <span>Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</span></h3>
-                <div class="faq-content">
-                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3><span class="num">3.</span> <span>Dolor sit amet consectetur adipiscing elit pellentesque?</span></h3>
-                <div class="faq-content">
-                  <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3><span class="num">4.</span> <span>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</span></h3>
-                <div class="faq-content">
-                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3><span class="num">5.</span> <span>Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</span></h3>
-                <div class="faq-content">
-                  <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
+          <div class="faq-item">
+            <h3><span class="num">2.</span> <span>What is your methodology for ensuring code quality and security?</span></h3>
+            <div class="faq-content">
+              <p>Security and maintainability are never afterthoughts in my workflow. I strictly adhere to <strong>Clean Code</strong> principles and maintain high test coverage using frameworks like <strong>Jest and Cypress</strong>. My security protocol includes rigorous input validation, the implementation of <strong>OAuth 2.0 / JWT</strong> for secure authentication, and regular audits for OWASP vulnerabilities. By leveraging <strong>TypeScript</strong>, I catch potential runtime errors during development, ensuring a type-safe and reliable production environment.</p>
             </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item-->
 
-          </div>
+          <div class="faq-item">
+            <h3><span class="num">3.</span> <span>How do you manage communication and project lifecycles?</span></h3>
+            <div class="faq-content">
+              <p>I operate within an <strong>Agile/Scrum</strong> framework, utilizing tools like <strong>Jira or Linear</strong> for transparent task tracking. I provide clients with weekly sprint demos and maintain a continuous feedback loop through dedicated <strong>Slack</strong> channels. Every project includes a detailed technical roadmap and comprehensive documentation in <strong>Notion or GitHub Wiki</strong>, ensuring that your internal teams can easily manage and extend the codebase long after the initial launch.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item-->
+
+          <div class="faq-item">
+            <h3><span class="num">4.</span> <span>Can you integrate AI and machine learning into existing web platforms?</span></h3>
+            <div class="faq-content">
+              <p>Absolutely. I specialize in integrating <strong>Large Language Models (LLMs)</strong> to enhance user engagement through intelligent automation. Whether it is implementing <strong>Retrieval-Augmented Generation (RAG)</strong> for custom knowledge bases or architecting AI-driven analytics dashboards, I ensure these features are integrated seamlessly into your existing UI. I focus on optimizing API latency and managing token costs to provide an AI experience that is both powerful and economically viable.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item-->
+
+          <div class="faq-item">
+            <h3><span class="num">5.</span> <span>What does your post-launch support and maintenance look like?</span></h3>
+            <div class="faq-content">
+              <p>Successful software requires constant evolution. My post-launch support involves real-time <strong>Error Tracking (Sentry)</strong> and performance monitoring to preemptively identify and resolve bottlenecks. I offer retainer-based maintenance that covers <strong>Dependency Security Patching</strong>, cloud infrastructure optimization, and iterative feature updates. This ensures your platform remains compatible with the latest browser standards and protected against emerging security threats in the ever-changing tech landscape.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item-->
+
         </div>
 
       </div>
+    </div>
 
-    </section><!-- /Faq Section -->
+  </div>
 
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section accent-background">
+</section><!-- /Faq Section -->
 
-      <img src="assets/img/testimonials-bg.jpg" class="testimonials-bg" alt="">
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+ <!-- Testimonials Section -->
+<section id="testimonials" class="testimonials section accent-background">
 
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              }
-            }
-          </script>
-          <div class="swiper-wrapper">
+  <img src="assets/img/testimonials-bg.jpg" class="testimonials-bg" alt="">
 
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
+    <div class="swiper init-swiper">
+      <script type="application/json" class="swiper-config">
+        {
+          "loop": true,
+          "speed": 600,
+          "autoplay": { "delay": 5000 },
+          "slidesPerView": "auto",
+          "pagination": {
+            "el": ".swiper-pagination",
+            "type": "bullets",
+            "clickable": true
+          }
+        }
+      </script>
+      <div class="swiper-wrapper">
 
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="Technical Director">
+            <h3>Alexander Thorne</h3>
+            <h4>CTO, Nexus Stream</h4>
+            <div class="stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>The level of technical proficiency demonstrated during our platform refactor was unparalleled. They didn't just rewrite our legacy PHP code; they architected a highly resilient <strong>Microservices ecosystem using Node.js and Docker</strong> that reduced our infrastructure costs by 35% while simultaneously increasing our deployment frequency. Their commitment to <strong>Test-Driven Development (TDD)</strong> ensured that we launched with zero critical bugs in the production environment.</span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
           </div>
-          <div class="swiper-pagination"></div>
-        </div>
+        </div><!-- End testimonial item -->
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="Product Manager">
+            <h3>Sophia Martinez</h3>
+            <h4>Senior Product Manager</h4>
+            <div class="stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>Bringing a complex <strong>AI-integrated MVP</strong> to market in under six weeks seemed impossible until we partnered with them. Their deep understanding of the <strong>T3 Stack and OpenAI's API</strong> allowed us to pivot quickly based on user feedback without compromising our data integrity or system performance. They possess that rare ability to translate high-level business requirements into elegant, scalable technical solutions that are a joy to maintain.</span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+          </div>
+        </div><!-- End testimonial item -->
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="Startup Founder">
+            <h3>David Chen</h3>
+            <h4>Founder, FinLeap</h4>
+            <div class="stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>Security was our primary concern for our fintech dashboard, and they delivered a <strong>type-safe architecture</strong> that exceeded our compliance standards. By implementing <strong>OAuth 2.0 with JWT</strong> and optimizing our PostgreSQL indexing strategies, they provided a platform that is both incredibly secure and lightning-fast. Their clear communication throughout the project lifecycle made them an indispensable extension of our core engineering team.</span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+          </div>
+        </div><!-- End testimonial item -->
 
       </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
 
-    </section><!-- /Testimonials Section -->
 
     <!-- Contact Section -->
     <section id="contact" class="contact section">

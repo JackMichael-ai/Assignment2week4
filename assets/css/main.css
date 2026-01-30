@@ -1,65 +1,130 @@
-/**
-* Template Name: DevFolio
-* Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-* Updated: Aug 07 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
---------------------------------------------------------------*/
-/* Fonts */
+
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "Raleway",  sans-serif;
   --nav-font: "Poppins",  sans-serif;
 }
 
-/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #4e4e4e; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #0a090f; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #0078ff; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+/* Navigation Dropdown Styling - Bright Theme */
+.navmenu .dropdown ul {
+  background-color: rgba(255, 255, 255, 0.95); /* Bright Glassmorphism */
+  backdrop-filter: blur(10px);
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 10px 0;
+  transition: all 0.3s ease;
 }
 
-/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
+/* Link Styling within Dropdown */
+.navmenu .dropdown ul a {
+  color: var(--nav-dropdown-color); /* Slate gray #475569 */
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+/* Hover State - Use your new Electric Blue */
+.navmenu .dropdown ul a:hover,
+.navmenu .dropdown ul .active,
+.navmenu .dropdown ul li:hover > a {
+  color: var(--accent-color); /* Bright Sky Blue #0ea5e9 */
+  background-color: #f1f5f9; /* Subtle gray highlight */
+}
+
+/* Deep Dropdown Adjustment */
+@media (min-width: 1200px) {
+  .navmenu .dropdown .dropdown ul {
+    top: 0;
+    left: -100%; /* Move it to the left to prevent screen overflow */
+    margin-left: -1px;
+  }
+}
+
+/* 1. UPDATED BRIGHT VARIABLES */
 :root {
-  --nav-color: #ffffff;  /* The default color of the main navmenu links */
-  --nav-hover-color: #ffffff; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #212529; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #0078ff; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  /* Global Colors - Clean & High Contrast */
+  --background-color: #ffffff;    /* Pure white */
+  --default-color: #334155;       /* Slate grey for high readability */
+  --heading-color: #0f172a;       /* Deep navy for sharp headers */
+  --accent-color: #0ea5e9;        /* Sky blue for dev-centric feel */
+  --surface-color: #f8fafc;       /* Lightest gray for section separation */
+  --contrast-color: #ffffff;      /* Contrast for text on blue buttons */
+
+  /* Navigation Colors - Brighter & Modern */
+  --nav-color: #475569;
+  --nav-hover-color: #0ea5e9;
+  --nav-mobile-background-color: #ffffff;
+  --nav-dropdown-background-color: #ffffff;
+  --nav-dropdown-color: #334155;
+  --nav-dropdown-hover-color: #0ea5e9;
+
+  scroll-behavior: smooth;
 }
 
-/* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
-
+/* 2. BACKGROUND PRESETS - For Zebra-Style Layout */
 .light-background {
-  --background-color: #f9f9f9;
+  --background-color: #f8fafc; /* Very light gray */
   --surface-color: #ffffff;
 }
 
 .dark-background {
-  --background-color: #060606;
-  --default-color: #ffffff;
+  --background-color: #0f172a; /* Deep navy (keep as high contrast option) */
+  --default-color: #e2e8f0;
   --heading-color: #ffffff;
-  --surface-color: #252525;
-  --contrast-color: #ffffff;
+  --surface-color: #1e293b;
 }
 
 .accent-background {
-  --background-color: #0078ff;
+  --background-color: #0ea5e9;
   --default-color: #ffffff;
   --heading-color: #ffffff;
   --accent-color: #ffffff;
-  --surface-color: #3393ff;
-  --contrast-color: #ffffff;
+  --surface-color: rgba(255, 255, 255, 0.2); /* Glass effect */
 }
+
+/* 3. CORE SHARED STYLES IMPROVEMENTS */
+body {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  font-family: "Inter", system-ui, sans-serif; /* Modern, clean font */
+  line-height: 1.8; /* Extra breathing room for lengthy text */
+}
+
+/* Card/Item Improvements - Soft Shadows & Glassmorphism */
+.card-item, .service-item, .portfolio-item, .resume-item {
+  background: var(--surface-color);
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  border-color: var(--accent-color);
+}
+
+/* 4. BUTTONS & UI */
+.btn-deploy {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  padding: 14px 35px;
+  border-radius: 50px;
+  font-weight: 600;
+  border: none;
+  box-shadow: 0 10px 15px -3px rgba(14, 165, 233, 0.3); /* Glowing effect */
+}
+
+.btn-deploy:hover {
+  filter: brightness(110%); /* Subtle brighten on hover */
+  transform: scale(1.05);
+}
+
 
 /* Smooth scroll */
 :root {
